@@ -9,5 +9,12 @@ const addButton = document.querySelector("button");
      const listItem = document.createElement("li");
      const spanText = document.createElement("span");
      const deleteButton = document.createElement("button");
+     
+     spanText.textContent = theItem;
+     deleteButton.textContent = "Delete";
+     
+     listItem.appendChild(spanText);
+     listItem.appendChild(deleteButton);
 
+     shoppingList.appendChild(listItem);
   }
